@@ -106,9 +106,6 @@ source /opt/ros/noetic/setup.zsh
 export PATH="/usr/lib/ccache:$PATH"
 alias rossrc="source ~/catkin_ws/devel/setup.zsh"
 
-# Load custom aliases
-source $HOME/.aliases
-
 # Load 7s-related configurations
 source $HOME/.config/7s_lf_config
 
@@ -122,8 +119,6 @@ fi
 
 source /home/lukasfro/.config/broot/launcher/bash/br
 fpath=(~/.zsh.d/ $fpath)
-
-alias botmaster='export ROS_MASTER_URI=http://10.42.0.100:11311; export ROS_IP=10.42.0.1'
 
 # HSTR configuration - add this to ~/.zshrc
 alias hh=hstr                    # hh to be alias for hstr
