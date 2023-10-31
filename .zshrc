@@ -106,11 +106,11 @@ source /opt/ros/noetic/setup.zsh
 export PATH="/usr/lib/ccache:$PATH"
 alias rossrc="source ~/catkin_ws/devel/setup.zsh"
 
-# Load 7s-related configurations
-source $HOME/.config/7s_lf_config
-
 # Load custom aliases
 source $HOME/.aliases
+
+# Load 7s-related configurations
+source $HOME/.config/7s_lf_config
 
 # Start tmux immediately
 if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
