@@ -112,6 +112,9 @@ source $HOME/.aliases
 # Load 7s-related configurations
 source $HOME/.config/7s_lf_config
 
+# Load custom aliases
+source $HOME/.aliases
+
 # Start tmux immediately
 if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
     tmux attach -t default || tmux new -s default
