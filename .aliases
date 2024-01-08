@@ -3,9 +3,12 @@ alias plz='sudo $(fc -ln -1)'
 alias cat='batcat'
 alias rm='rm -I'
 alias cl='clear'
+alias vim='nvim'
 
 alias ls='exa --icons --git -lgh@'
 alias lt='exa --icons --git -lgh@TL 3'
 alias la='exa --icons --git -lagh@'
+
+alias spell_check='cspell lint --no-progress --reporter default'
 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
