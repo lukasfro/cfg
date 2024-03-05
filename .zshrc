@@ -112,11 +112,6 @@ source $HOME/.aliases
 # Load 7s-related configurations
 source $HOME/.config/7s_lf_config
 
-# Start tmux immediately
-if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
-    tmux attach -t default || tmux new -s default
-fi
-
 source /home/lukasfro/.config/broot/launcher/bash/br
 fpath=(~/.zsh.d/ $fpath)
 
@@ -131,4 +126,6 @@ export MCFLY_KEY_SCHEME=vim
 export MCFLY_FUZZY=2
 
 export GIT_EDITOR=vim
+export VISUAL=vim;
+export EDITOR=vim;
 
