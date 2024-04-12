@@ -3,3 +3,5 @@ gui:
 
 os:
   editPreset: "nvim"
+
+notARepository: "quit"
