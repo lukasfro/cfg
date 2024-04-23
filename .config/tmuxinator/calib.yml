@@ -45,10 +45,13 @@ root: ~/catkin_ws/src/oomact
 # attach: false
 
 windows:
+  - git:
+      panes:
+        - lazygit
   - editor:
       layout: main-horizontal
       panes:
         - vim
         - roscore
-  - workspace: 
+  - workspace:
   - calib: cd /home/lukasfro/calib/

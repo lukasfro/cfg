@@ -45,6 +45,9 @@ startup_window: workspace
 # attach: false
 
 windows:
+  - git:
+      panes:
+        - lazygit
   - editor:
       layout: main-horizontal
       # Synchronize all panes of this window, can be enabled before or after the pane commands run.
