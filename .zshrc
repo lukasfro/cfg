@@ -119,11 +119,7 @@ fpath=(~/.zsh.d/ $fpath)
 alias hh=hstr                    # hh to be alias for hstr
 setopt histignorespace           # skip cmds w/ leading space from history
 export HSTR_CONFIG=hicolor,blacklist       # get more colors
-# bindkey -s "\C-r" "\C-a hstr -- \C-j"     # bind hstr to Ctrl-r (for Vi mode check doc)
-
-eval "$(mcfly init zsh)"
-export MCFLY_KEY_SCHEME=vim
-export MCFLY_FUZZY=2
+bindkey -s "\C-r" "\C-a hstr -- \C-j"     # bind hstr to Ctrl-r (for Vi mode check doc)
 
 export GIT_EDITOR=vim
 export VISUAL=vim;
