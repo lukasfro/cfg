@@ -121,7 +121,11 @@ setopt histignorespace           # skip cmds w/ leading space from history
 export HSTR_CONFIG=hicolor,blacklist       # get more colors
 bindkey -s "\C-r" "\C-a hstr -- \C-j"     # bind hstr to Ctrl-r (for Vi mode check doc)
 
+source <(fzf --zsh)
+
 export GIT_EDITOR=vim
 export VISUAL=vim;
 export EDITOR=vim;
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
